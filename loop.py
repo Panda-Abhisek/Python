@@ -17,7 +17,9 @@ ExampleGet your own Python Server
 Print i as long as i is less than 6:
 """
 
-i = 1
+i = 0
 while i < 6:
-  print(i)
   i += 1
+  if i == 4:
+    continue
+  print(i)
