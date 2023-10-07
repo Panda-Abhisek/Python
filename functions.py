@@ -34,3 +34,11 @@ def my_function(child3, child2, child1):
   print("The youngest child is " + child3)
 
 my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus") 
+
+"""
+The pass Statement
+function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.
+
+Example """
+def myfunction():
+  pass
