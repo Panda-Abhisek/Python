@@ -35,11 +35,27 @@ Global variables are available from within any scope, global and local.
 Example
 A variable created outside of a function is global and can be used by anyone: """
 
-y = 1000
+# y = 1000
+
+# def myfunc():
+#   print(y)
+
+# myfunc()
+
+# print(y)
+
+""" Naming Variables
+If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables, one available in the global scope (outside the function) and one available in the local scope (inside the function):
+
+Example
+The function will print the local x, and then the code will print the global x:"""
+
+x = 300
 
 def myfunc():
-  print(y)
+  x = 200
+  print(x)
 
 myfunc()
 
-print(y)
+print(x)
